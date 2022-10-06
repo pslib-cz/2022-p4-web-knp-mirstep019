@@ -3,12 +3,12 @@ import './RPS.css';
 
 const Paper = ({isPicked, start}) => {
 
-    function onCardClick(e){
-        setBasicstate("selected")
+    const [isActive, setIsActive] = useState(false);
+    function onCardClick(){
+        setIsActive(current => !current);
     }
-
     return(
-        <div id="player-paper" className="icon icon-paper"></div>
+        <div id="player-paper" className={isActive ? 'icon icon-paper icon-selected' : 'icon icon-paper'} onClick={onCardClick}></div>
     )
 }
 

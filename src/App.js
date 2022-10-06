@@ -8,6 +8,8 @@ function App() {
 
   let [basicState, setBasicState] = useState([]);
 
+  
+
 
 
 
@@ -16,14 +18,14 @@ function App() {
       <h1 id="title">Kámen, nůžky, papír</h1>
       <section id="computer" className="choices">
           <h2>Počítač</h2>
-          <div id="computer-rock" className="icon icon-rock icon-selected"></div>
+          <div id="computer-rock" className="icon icon-rock"></div>
           <div id="computer-paper" className="icon icon-paper"></div>
           <div id="computer-scissors" className="icon icon-scissors"></div>
       </section>
       <section id="player" className="choices">
           <h2>Hráč</h2>
-          <Rock isPicked={basicState.isPicked} />
-          <Paper isPicked={basicState.isPicked}/>
+          <Rock isPicked={basicState.isPicked}/>
+          <Paper isPicked={basicState.isPicked} />
           <Scissors isPicked={basicState.isPicked}/>
       </section>
       <div id="result" className="text">Vyberte si symbol</div>
