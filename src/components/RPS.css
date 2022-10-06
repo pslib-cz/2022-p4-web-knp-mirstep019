@@ -1,0 +1,20 @@
+/*.icon {
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center center;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 1em;
+  }
+  .icon-paper {
+    background-image: url("../assets/icons/paper.png");
+  }
+  .icon-rock {
+    background-image: url("../assets/icons/rock.png");
+  }
+  .icon-scissors {
+    background-image: url("../assets/icons/scissors.png");
+  }
+  .icon-selected {
+    background-color:lightgreen;
+  }*/

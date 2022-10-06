@@ -1,6 +1,16 @@
 import './App.css';
+import React, { useState } from 'react';
+import Rock from './components/Rock';
+import Paper from './components/Paper';
+import Scissors from './components/Scissors';
 
 function App() {
+
+  let [basicState, setBasicState] = useState([]);
+
+
+
+
   return (
     <div id="app">
       <h1 id="title">Kámen, nůžky, papír</h1>
@@ -12,9 +22,9 @@ function App() {
       </section>
       <section id="player" className="choices">
           <h2>Hráč</h2>
-          <div id="player-rock" className="icon icon-rock"></div>
-          <div id="player-paper" className="icon icon-paper"></div>
-          <div id="player-scissors" className="icon icon-scissors icon-selected"></div>
+          <Rock isPicked={basicState.isPicked} />
+          <Paper isPicked={basicState.isPicked}/>
+          <Scissors isPicked={basicState.isPicked}/>
       </section>
       <div id="result" className="text">Vyberte si symbol</div>
       <section className="stats">
